@@ -32,6 +32,9 @@ class _AddPlaceState extends State<AddPlace> {
                   return null;
                 },
                 type: 'string'),
+            Container(
+              height: 20,
+            ),
             TextBox(
                 hintText: 'rating out of 5',
                 controller: ratingTextController,
@@ -42,7 +45,9 @@ class _AddPlaceState extends State<AddPlace> {
                   return null;
                 },
                 type: 'number'),
-            TextButton(onPressed: () {}, child: Text("add"))
+            Container(
+                padding: EdgeInsets.all(20),
+                child: TextButton(onPressed: () {}, child: Text("Add place")))
           ],
         ),
       ),

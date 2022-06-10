@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:where_to_go/screens/add_place.dart';
+import 'package:where_to_go/screens/place_list.dart';
 import 'package:where_to_go/wrapper.dart';
 
 Future<void> main() async {
@@ -20,6 +21,6 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Inter',
           primaryColor: const Color(0xff083554),
         ),
-        home: AddPlace());
+        home: PlaceList());
   }
 }
