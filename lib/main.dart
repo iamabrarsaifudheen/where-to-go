@@ -21,6 +21,6 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Inter',
           primaryColor: const Color(0xff083554),
         ),
-        home: PlaceList());
+        home: Wrapper());
   }
 }

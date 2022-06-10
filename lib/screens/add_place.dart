@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:where_to_go/screens/place_list.dart';
 import 'package:where_to_go/widgets/text_box.dart';
 
 class AddPlace extends StatefulWidget {
@@ -47,7 +48,14 @@ class _AddPlaceState extends State<AddPlace> {
                 type: 'number'),
             Container(
                 padding: EdgeInsets.all(20),
-                child: TextButton(onPressed: () {}, child: Text("Add place")))
+                child: TextButton(onPressed: () {
+
+                   Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PlaceList()),
+                        );
+                }, child: Text("Add place")))
           ],
         ),
       ),

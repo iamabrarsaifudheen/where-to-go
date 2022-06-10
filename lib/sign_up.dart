@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:where_to_go/screens/add_place.dart';
 import 'package:where_to_go/widgets/button.dart';
 import 'package:where_to_go/widgets/text_box.dart';
 
@@ -90,6 +91,14 @@ class _SignUpState extends State<SignUp> {
                                     content: Text('Few More Details')),
                               );
                             }
+
+
+                            // navigate
+                             Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const AddPlace()),
+                        );
                           },
                         ),
                         Center(

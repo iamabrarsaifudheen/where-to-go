@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:where_to_go/screens/add_place.dart';
 import 'package:where_to_go/services/auth.dart';
 import 'package:where_to_go/widgets/button.dart';
 import 'package:where_to_go/widgets/text_box.dart';
@@ -23,7 +24,7 @@ class _SignInState extends State<SignIn> {
     var width = size.width;
     return Scaffold(
       appBar: AppBar(
-          title: Text('Sign Up'),
+          title: Text('Sign In'),
           backgroundColor: Theme.of(context).primaryColor),
       body: SafeArea(
         child: Form(
@@ -81,6 +82,14 @@ class _SignInState extends State<SignIn> {
                             const SnackBar(content: Text("Welcome")),
                           );
                         }
+
+                        // navigate
+
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const AddPlace()),
+                        );
                       },
                       text: 'Sign In'),
                   Center(
